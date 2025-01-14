@@ -27,7 +27,7 @@ yarn dev
 Use the following admin to access the dashboard
 
 ```
-user: admin@tesr.com
+user: admin@test.com
 password: admin123
 ```
 
