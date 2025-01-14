@@ -6,6 +6,7 @@ import React, {
   useState,
   useContext,
   FC,
+  ReactNode,
 } from 'react'
 
 import { User, LoginData } from '@/common/types'
@@ -22,7 +23,7 @@ const AuthContext = createContext({} as AuthContextData)
 
 const useAuth = () => useContext(AuthContext)
 
-const AuthProvider: FC = ({ children }) => {
+const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
