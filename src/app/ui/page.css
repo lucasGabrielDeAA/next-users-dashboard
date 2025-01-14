@@ -1,0 +1,30 @@
+.page-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page-header a {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	text-decoration: none;
+	background-color: #050;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+}
+
+.page-header p {
+	color: #282c34;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.page-header p > svg {
+	cursor: pointer;
+}

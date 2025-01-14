@@ -1,0 +1,63 @@
+.title {
+	margin-left: 15px;
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 0 0.9px 4px rgba(0, 0, 0, 0.028),
+	0 3.1px 13.4px rgba(0, 0, 0, 0.042), 0 14px 60px rgba(0, 0, 0, 0.07);
+	transition: ease all .5s;
+	color: #282c34;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.item {
+	background-color: #90ee90;
+	box-shadow: 0 0.9px 4px rgba(0, 0, 0, 0.028), 0 3.1px 13.4px rgba(0, 0, 0, 0.042), 0 14px 60px rgba(0, 0, 0, 0.07);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 20px;
+	width: 100%;
+	margin: 10px;
+	transition: ease all .5s;
+}
+
+.item > svg {
+	font-size: 25px;
+	color: #282c34;
+}
+
+span.large-text {
+	font-size: 25px;
+	color: #282c34;
+}
+
+@media screen and (max-width: 600px) {
+	.title {
+		font-size: 20px;
+	}
+
+	.item > svg {
+		font-size: 20px;
+	}
+
+	span.large-text {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.item {
+		flex: 1;
+	}
+}
