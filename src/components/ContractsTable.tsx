@@ -25,7 +25,9 @@ const UsersTable = ({ contracts }: ContractsTableProps) => {
           <tbody>
             {contracts?.map((contract: ContractData) => (
               <tr key={contract.id}>
-                <td>{contract.id}</td>
+                <td>
+                  <span className='cell-header'>ID</span> {contract.id}
+                </td>
                 <td>
                   <span className='cell-header'>Name</span> {contract.name}
                 </td>
