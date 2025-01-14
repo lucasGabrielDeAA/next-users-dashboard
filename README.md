@@ -10,7 +10,7 @@ yarn install
 
 ## Getting Started
 
-First, run the databases and development server:
+Run the databases and development server
 
 ```bash
 npx json-server-auth auth-db.json --port 4000
