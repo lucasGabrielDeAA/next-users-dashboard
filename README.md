@@ -24,4 +24,11 @@ npx json-server --watch db.json --port 3003
 yarn dev
 ```
 
+Use the following admin to access the dashboard
+
+```
+user: admin@tesr.com
+password: admin123
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
