@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "Lucas Gabriel",
+      "email": "lucas.gabriel@test.com",
+      "role": "Mobile Developer",
+      "id": 1
+    },
+    {
+      "name": "Lucas Gabriel 1",
+      "email": "lucas.gabriel1@test.com",
+      "role": "Software Engineer",
+      "id": 2
+    }
+  ],
+  "contracts": [
+    {
+      "name": "Company 1",
+      "email": "company1@test.com",
+      "userId": "1",
+      "price": 2000000,
+      "id": 1
+    }
+  ]
+}
