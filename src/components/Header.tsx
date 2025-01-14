@@ -48,12 +48,11 @@ const Header = () => {
     const mediaQuery = window.matchMedia('(max-width: 700px)')
 
     mediaQuery.addEventListener('change', handleMediaQueryChange)
-    handleMediaQueryChange(mediaQuery)
 
-    return () => mediaQuery.removeListener(handleMediaQueryChange)
+    return () => mediaQuery?.removeListener(handleMediaQueryChange)
   }, [])
 
-  const handleMediaQueryChange = (mediaQuery: MediaQueryList) =>
+  const handleMediaQueryChange = (mediaQuery: MediaQueryListEvent) =>
     setIsSmallScreen(mediaQuery.matches)
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
@@ -85,20 +84,20 @@ const Header = () => {
                   {link.name}
                 </Link>
               ) : (
-                <button onClick={link.onClick}>{link.name}</button>
+                link.onClick && (
+                  <button onClick={link.onClick}>{link.name}</button>
+                )
               )}
             </div>
           ))}
         </nav>
       )}
 
-      <button
-        onClick={toggleMenu}
-        className='burger'
-        style={{ display: !isLoggedIn && 'none' }}
-      >
-        <FontAwesomeIcon icon={faBars} />
-      </button>
+      {isLoggedIn && (
+        <button onClick={toggleMenu} className='burger'>
+          <FontAwesomeIcon icon={faBars} />
+        </button>
+      )}
     </header>
   )
 }
