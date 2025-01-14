@@ -1,11 +1,11 @@
 'use client'
 
-import React, { FC, useEffect, JSX } from 'react'
+import React, { FC, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { useAuth } from '@/context/AuthProvider'
 
 const withAuth = (WrappedComponent: FC) => {
-  const Wrapper = (props: JSX.IntrinsicAttributes) => {
+  const Wrapper = (props) => {
     const router = useRouter()
     const { isLoggedIn } = useAuth()
 
